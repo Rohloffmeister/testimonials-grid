@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --moderateviolet: hsl(263, 55%, 52%);
@@ -16,17 +16,20 @@
 body {
     font-family: "Barlow Semi Condensed";
     background-color: var(--lightgrayishblue);
-    font-size: calc(3em*4vh);
+    font-size: calc(231em*4vh);
+    min-height: 100vh;
+    margin:0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-weight: 500;
-
-
 }
 footer{
-   
+    width:100%;
+    margin-bottom: 2vh;
+    margin-top:20vh;
+    
 }
 p {
     color: var(--lightgray);
@@ -34,11 +37,10 @@ p {
 }
 
 main {
-    flex:1;
+
     margin-top: 3vh;
-    
-    height: 80vh;
-    min-height: auto;
+    height: 50%;
+    min-height: fit-content;
     width: 80%;
     grid-auto-flow: row;
     display: grid;
@@ -176,6 +178,7 @@ main {
     main {
         grid-template-columns: repeat(2, 1fr);
         width: 90%;
+        max-height: none;
     }
 
     .Daniel-Clifford {
@@ -193,13 +196,14 @@ main {
 
     .Patrick-Abrams {
         grid-column: 1 / span 2;
-    }
+    }    
 }
 
 @media screen and (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
         width: 95%;
+        max-height: none;
     }
 
     .Daniel-Clifford,
@@ -209,3 +213,6 @@ main {
         grid-column: 1;
     }
 }
+@media screen and (min-width: 1024px) {
+
+} 
