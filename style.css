@@ -25,16 +25,20 @@ body {
 
 
 }
-
+footer{
+   
+}
 p {
     color: var(--lightgray);
     font-weight: 400;
 }
 
 main {
+    flex:1;
     margin-top: 3vh;
-    min-height: fit-content;
+    
     height: 80vh;
+    min-height: auto;
     width: 80%;
     grid-auto-flow: row;
     display: grid;
